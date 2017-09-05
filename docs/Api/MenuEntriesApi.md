@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **systemMenuentriesCountGet**
-> \Spinen\ConnectWise\Clients\System\Model\Count systemMenuentriesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemMenuentriesCountGet($conditions)
 
 
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMenuentriesGet**
-> \Spinen\ConnectWise\Clients\System\Model\MenuEntry[] systemMenuentriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[] systemMenuentriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]**](../Model/MenuEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]**](../Model/MenuEntry.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMenuentriesIdGet**
-> \Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdGet($id)
 
 
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMenuentriesIdPatch**
-> \Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdPatch($id, $operations)
 
 
 
@@ -341,7 +341,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\MenuEntriesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemMenuentriesIdPatch($id, $operations);
@@ -357,11 +357,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
 
 ### Authorization
 
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMenuentriesIdPut**
-> \Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdPut($id, $menu_entry)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesIdPut($id, $menu_entry)
 
 
 
@@ -392,7 +392,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\MenuEntriesApi();
 $id = 56; // int | 
-$menu_entry = new \Spinen\ConnectWise\Clients\System\Model\MenuEntry(); // \Spinen\ConnectWise\Clients\System\Model\MenuEntry | 
+$menu_entry = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry | 
 
 try {
     $result = $api_instance->systemMenuentriesIdPut($id, $menu_entry);
@@ -408,11 +408,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **menu_entry** | [**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/\Spinen\ConnectWise\Clients\System\Model\MenuEntry.md)|  |
+ **menu_entry** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
 
 ### Authorization
 
@@ -426,7 +426,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMenuentriesPost**
-> \Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesPost($menu_entry)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry systemMenuentriesPost($menu_entry)
 
 
 
@@ -442,7 +442,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\MenuEntriesApi();
-$menu_entry = new \Spinen\ConnectWise\Clients\System\Model\MenuEntry(); // \Spinen\ConnectWise\Clients\System\Model\MenuEntry | 
+$menu_entry = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry | 
 
 try {
     $result = $api_instance->systemMenuentriesPost($menu_entry);
@@ -457,11 +457,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **menu_entry** | [**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/\Spinen\ConnectWise\Clients\System\Model\MenuEntry.md)|  |
+ **menu_entry** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry**](../Model/MenuEntry.md)
 
 ### Authorization
 

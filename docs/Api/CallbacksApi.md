@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemCallbacksCountGet**
-> \Spinen\ConnectWise\Clients\System\Model\Count systemCallbacksCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemCallbacksCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemCallbacksGet**
-> \Spinen\ConnectWise\Clients\System\Model\CallbackEntry[] systemCallbacksGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry[] systemCallbacksGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry[]**](../Model/CallbackEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry[]**](../Model/CallbackEntry.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemCallbacksIdGet**
-> \Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemCallbacksIdPatch**
-> \Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\CallbacksApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemCallbacksIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemCallbacksIdPut**
-> \Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdPut($id, $callback_entry)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksIdPut($id, $callback_entry)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\CallbacksApi();
 $id = 56; // int | 
-$callback_entry = new \Spinen\ConnectWise\Clients\System\Model\CallbackEntry(); // \Spinen\ConnectWise\Clients\System\Model\CallbackEntry | 
+$callback_entry = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry | 
 
 try {
     $result = $api_instance->systemCallbacksIdPut($id, $callback_entry);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **callback_entry** | [**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/\Spinen\ConnectWise\Clients\System\Model\CallbackEntry.md)|  |
+ **callback_entry** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemCallbacksPost**
-> \Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksPost($callback_entry)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry systemCallbacksPost($callback_entry)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\CallbacksApi();
-$callback_entry = new \Spinen\ConnectWise\Clients\System\Model\CallbackEntry(); // \Spinen\ConnectWise\Clients\System\Model\CallbackEntry | 
+$callback_entry = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry | 
 
 try {
     $result = $api_instance->systemCallbacksPost($callback_entry);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callback_entry** | [**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/\Spinen\ConnectWise\Clients\System\Model\CallbackEntry.md)|  |
+ **callback_entry** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CallbackEntry**](../Model/CallbackEntry.md)
 
 ### Authorization
 

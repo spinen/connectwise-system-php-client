@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -68,7 +68,7 @@ class UserDefinedField implements ArrayAccess
         'read_only_flag' => 'bool',
         'list_view_flag' => 'bool',
         'button_url' => 'string',
-        'options' => '\Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[]',
+        'options' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[]',
         'business_unit_ids' => 'int[]',
         'location_ids' => 'int[]',
         'add_all_business_units' => 'bool',
@@ -76,7 +76,7 @@ class UserDefinedField implements ArrayAccess
         'add_all_locations' => 'bool',
         'remove_all_locations' => 'bool',
         'date_created' => '\DateTime',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -197,7 +197,7 @@ class UserDefinedField implements ArrayAccess
     const FIELD_TYPE_IDENTIFIER_PERCENT = 'Percent';
     const FIELD_TYPE_IDENTIFIER_TEXT_AREA = 'TextArea';
     const ENTRY_TYPE_IDENTIFIER_ENTRY_FIELD = 'EntryField';
-    const ENTRY_TYPE_IDENTIFIER_LIST = 'List';
+    const ENTRY_TYPE_IDENTIFIER__LIST = 'List';
     const ENTRY_TYPE_IDENTIFIER_OPTION = 'Option';
     
 
@@ -228,7 +228,7 @@ class UserDefinedField implements ArrayAccess
     {
         return [
             self::ENTRY_TYPE_IDENTIFIER_ENTRY_FIELD,
-            self::ENTRY_TYPE_IDENTIFIER_LIST,
+            self::ENTRY_TYPE_IDENTIFIER__LIST,
             self::ENTRY_TYPE_IDENTIFIER_OPTION,
         ];
     }
@@ -695,7 +695,7 @@ class UserDefinedField implements ArrayAccess
 
     /**
      * Gets options
-     * @return \Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[]
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[]
      */
     public function getOptions()
     {
@@ -704,7 +704,7 @@ class UserDefinedField implements ArrayAccess
 
     /**
      * Sets options
-     * @param \Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[] $options
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedFieldOption[] $options
      * @return $this
      */
     public function setOptions($options)
@@ -863,7 +863,7 @@ class UserDefinedField implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -872,7 +872,7 @@ class UserDefinedField implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

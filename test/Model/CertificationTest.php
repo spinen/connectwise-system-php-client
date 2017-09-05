@@ -1,6 +1,6 @@
 <?php
 /**
- * ICollectionTest
+ * CertificationTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Spinen\ConnectWise\Clients\System;
 
 /**
- * ICollectionTest Class Doc Comment
+ * CertificationTest Class Doc Comment
  *
  * @category    Class */
-// * @description ICollection
+// * @description Certification
 /**
  * @package     Spinen\ConnectWise\Clients\System
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ICollectionTest extends \PHPUnit_Framework_TestCase
+class CertificationTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,9 +75,41 @@ class ICollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ICollection"
+     * Test "Certification"
      */
-    public function testICollection()
+    public function testCertification()
+    {
+
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+
+    }
+
+    /**
+     * Test attribute "name"
+     */
+    public function testPropertyName()
+    {
+
+    }
+
+    /**
+     * Test attribute "company"
+     */
+    public function testPropertyCompany()
+    {
+
+    }
+
+    /**
+     * Test attribute "_info"
+     */
+    public function testPropertyInfo()
     {
 
     }

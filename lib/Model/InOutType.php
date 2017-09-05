@@ -1,6 +1,6 @@
 <?php
 /**
- * ValueCollection
+ * InOutType
  *
  * PHP version 5
  *
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
 /**
- * ValueCollection Class Doc Comment
+ * InOutType Class Doc Comment
  *
  * @category    Class */
 /**
@@ -40,7 +40,7 @@ use \ArrayAccess;
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ValueCollection implements ArrayAccess
+class InOutType implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,17 +48,16 @@ class ValueCollection implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'ValueCollection';
+    protected static $swaggerModelName = 'InOutType';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'count' => 'int',
-        'system_collections_generic_i_collection_t_value_is_read_only' => 'bool',
-        'system_collections_i_collection_is_synchronized' => 'bool',
-        'system_collections_i_collection_sync_root' => 'string'
+        'id' => 'int',
+        'description' => 'string',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -71,10 +70,9 @@ class ValueCollection implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'count' => 'Count',
-        'system_collections_generic_i_collection_t_value_is_read_only' => 'System.Collections.Generic.ICollection&lt;TValue&gt;.IsReadOnly',
-        'system_collections_i_collection_is_synchronized' => 'System.Collections.ICollection.IsSynchronized',
-        'system_collections_i_collection_sync_root' => 'System.Collections.ICollection.SyncRoot'
+        'id' => 'id',
+        'description' => 'description',
+        '_info' => '_info'
     ];
 
 
@@ -83,10 +81,9 @@ class ValueCollection implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'count' => 'setCount',
-        'system_collections_generic_i_collection_t_value_is_read_only' => 'setSystemCollectionsGenericICollectionTValueIsReadOnly',
-        'system_collections_i_collection_is_synchronized' => 'setSystemCollectionsICollectionIsSynchronized',
-        'system_collections_i_collection_sync_root' => 'setSystemCollectionsICollectionSyncRoot'
+        'id' => 'setId',
+        'description' => 'setDescription',
+        '_info' => 'setInfo'
     ];
 
 
@@ -95,10 +92,9 @@ class ValueCollection implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'count' => 'getCount',
-        'system_collections_generic_i_collection_t_value_is_read_only' => 'getSystemCollectionsGenericICollectionTValueIsReadOnly',
-        'system_collections_i_collection_is_synchronized' => 'getSystemCollectionsICollectionIsSynchronized',
-        'system_collections_i_collection_sync_root' => 'getSystemCollectionsICollectionSyncRoot'
+        'id' => 'getId',
+        'description' => 'getDescription',
+        '_info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -132,10 +128,9 @@ class ValueCollection implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['count'] = isset($data['count']) ? $data['count'] : null;
-        $this->container['system_collections_generic_i_collection_t_value_is_read_only'] = isset($data['system_collections_generic_i_collection_t_value_is_read_only']) ? $data['system_collections_generic_i_collection_t_value_is_read_only'] : null;
-        $this->container['system_collections_i_collection_is_synchronized'] = isset($data['system_collections_i_collection_is_synchronized']) ? $data['system_collections_i_collection_is_synchronized'] : null;
-        $this->container['system_collections_i_collection_sync_root'] = isset($data['system_collections_i_collection_sync_root']) ? $data['system_collections_i_collection_sync_root'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
+        $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
     /**
@@ -146,6 +141,13 @@ class ValueCollection implements ArrayAccess
     public function listInvalidProperties()
     {
         $invalid_properties = [];
+        if ($this->container['description'] === null) {
+            $invalid_properties[] = "'description' can't be null";
+        }
+        if ((strlen($this->container['description']) > 30)) {
+            $invalid_properties[] = "invalid value for 'description', the character length must be smaller than or equal to 30.";
+        }
+
         return $invalid_properties;
     }
 
@@ -157,90 +159,79 @@ class ValueCollection implements ArrayAccess
      */
     public function valid()
     {
+        if ($this->container['description'] === null) {
+            return false;
+        }
+        if (strlen($this->container['description']) > 30) {
+            return false;
+        }
         return true;
     }
 
 
     /**
-     * Gets count
+     * Gets id
      * @return int
      */
-    public function getCount()
+    public function getId()
     {
-        return $this->container['count'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets count
-     * @param int $count
+     * Sets id
+     * @param int $id
      * @return $this
      */
-    public function setCount($count)
+    public function setId($id)
     {
-        $this->container['count'] = $count;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /**
-     * Gets system_collections_generic_i_collection_t_value_is_read_only
-     * @return bool
-     */
-    public function getSystemCollectionsGenericICollectionTValueIsReadOnly()
-    {
-        return $this->container['system_collections_generic_i_collection_t_value_is_read_only'];
-    }
-
-    /**
-     * Sets system_collections_generic_i_collection_t_value_is_read_only
-     * @param bool $system_collections_generic_i_collection_t_value_is_read_only
-     * @return $this
-     */
-    public function setSystemCollectionsGenericICollectionTValueIsReadOnly($system_collections_generic_i_collection_t_value_is_read_only)
-    {
-        $this->container['system_collections_generic_i_collection_t_value_is_read_only'] = $system_collections_generic_i_collection_t_value_is_read_only;
-
-        return $this;
-    }
-
-    /**
-     * Gets system_collections_i_collection_is_synchronized
-     * @return bool
-     */
-    public function getSystemCollectionsICollectionIsSynchronized()
-    {
-        return $this->container['system_collections_i_collection_is_synchronized'];
-    }
-
-    /**
-     * Sets system_collections_i_collection_is_synchronized
-     * @param bool $system_collections_i_collection_is_synchronized
-     * @return $this
-     */
-    public function setSystemCollectionsICollectionIsSynchronized($system_collections_i_collection_is_synchronized)
-    {
-        $this->container['system_collections_i_collection_is_synchronized'] = $system_collections_i_collection_is_synchronized;
-
-        return $this;
-    }
-
-    /**
-     * Gets system_collections_i_collection_sync_root
+     * Gets description
      * @return string
      */
-    public function getSystemCollectionsICollectionSyncRoot()
+    public function getDescription()
     {
-        return $this->container['system_collections_i_collection_sync_root'];
+        return $this->container['description'];
     }
 
     /**
-     * Sets system_collections_i_collection_sync_root
-     * @param string $system_collections_i_collection_sync_root
+     * Sets description
+     * @param string $description
      * @return $this
      */
-    public function setSystemCollectionsICollectionSyncRoot($system_collections_i_collection_sync_root)
+    public function setDescription($description)
     {
-        $this->container['system_collections_i_collection_sync_root'] = $system_collections_i_collection_sync_root;
+        if ((strlen($description) > 30)) {
+            throw new \InvalidArgumentException('invalid length for $description when calling InOutType., must be smaller than or equal to 30.');
+        }
+
+        $this->container['description'] = $description;
+
+        return $this;
+    }
+
+    /**
+     * Gets _info
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     */
+    public function getInfo()
+    {
+        return $this->container['_info'];
+    }
+
+    /**
+     * Sets _info
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @return $this
+     */
+    public function setInfo($_info)
+    {
+        $this->container['_info'] = $_info;
 
         return $this;
     }

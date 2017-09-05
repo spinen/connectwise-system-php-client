@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **systemMembersCountGet**
-> \Spinen\ConnectWise\Clients\System\Model\Count systemMembersCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemMembersCountGet($conditions)
 
 
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMembersGet**
-> \Spinen\ConnectWise\Clients\System\Model\Member[] systemMembersGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Member[] systemMembersGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Member[]**](../Model/Member.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Member[]**](../Model/Member.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMembersMemberIdentifierGet**
-> \Spinen\ConnectWise\Clients\System\Model\Member systemMembersMemberIdentifierGet($member_identifier)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Member systemMembersMemberIdentifierGet($member_identifier)
 
 
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Member**](../Model/Member.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Member**](../Model/Member.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemMembersMemberIdentifierTokensPost**
-> \Spinen\ConnectWise\Clients\System\Model\Token systemMembersMemberIdentifierTokensPost($member_identifier)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Token systemMembersMemberIdentifierTokensPost($member_identifier)
 
 
 
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Token**](../Model/Token.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Token**](../Model/Token.md)
 
 ### Authorization
 

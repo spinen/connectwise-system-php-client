@@ -139,6 +139,14 @@ class CallbackEntryTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "inactive_flag"
+     */
+    public function testPropertyInactiveFlag()
+    {
+
+    }
+
+    /**
      * Test attribute "_info"
      */
     public function testPropertyInfo()

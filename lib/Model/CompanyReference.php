@@ -1,6 +1,6 @@
 <?php
 /**
- * ICollection
+ * CompanyReference
  *
  * PHP version 5
  *
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
 /**
- * ICollection Class Doc Comment
+ * CompanyReference Class Doc Comment
  *
  * @category    Class */
 /**
@@ -40,7 +40,7 @@ use \ArrayAccess;
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ICollection implements ArrayAccess
+class CompanyReference implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,14 +48,17 @@ class ICollection implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'ICollection';
+    protected static $swaggerModelName = 'CompanyReference';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'id' => 'int',
+        'identifier' => 'string',
+        'name' => 'string',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -68,7 +71,10 @@ class ICollection implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'id' => 'id',
+        'identifier' => 'identifier',
+        'name' => 'name',
+        '_info' => '_info'
     ];
 
 
@@ -77,7 +83,10 @@ class ICollection implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'id' => 'setId',
+        'identifier' => 'setIdentifier',
+        'name' => 'setName',
+        '_info' => 'setInfo'
     ];
 
 
@@ -86,7 +95,10 @@ class ICollection implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'id' => 'getId',
+        'identifier' => 'getIdentifier',
+        'name' => 'getName',
+        '_info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -120,6 +132,10 @@ class ICollection implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['identifier'] = isset($data['identifier']) ? $data['identifier'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
     /**
@@ -144,6 +160,90 @@ class ICollection implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets id
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets identifier
+     * @return string
+     */
+    public function getIdentifier()
+    {
+        return $this->container['identifier'];
+    }
+
+    /**
+     * Sets identifier
+     * @param string $identifier
+     * @return $this
+     */
+    public function setIdentifier($identifier)
+    {
+        $this->container['identifier'] = $identifier;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     * @param string $name
+     * @return $this
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets _info
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     */
+    public function getInfo()
+    {
+        return $this->container['_info'];
+    }
+
+    /**
+     * Sets _info
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @return $this
+     */
+    public function setInfo($_info)
+    {
+        $this->container['_info'] = $_info;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset

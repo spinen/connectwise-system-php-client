@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **systemReportsGet**
-> \Spinen\ConnectWise\Clients\System\Model\Report[] systemReportsGet($conditions, $order_by, $childconditions, $customfieldconditions)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Report[] systemReportsGet($conditions, $order_by, $childconditions, $customfieldconditions)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Report[]**](../Model/Report.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Report[]**](../Model/Report.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemReportsReportNameColumnsGet**
-> \Spinen\ConnectWise\Clients\System\Model\JObject[] systemReportsReportNameColumnsGet($report_name)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[] systemReportsReportNameColumnsGet($report_name)
 
 
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\JObject[]**](../Model/JObject.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[]**](../Model/JObject.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemReportsReportNameCountGet**
-> \Spinen\ConnectWise\Clients\System\Model\Count systemReportsReportNameCountGet($report_name, $conditions)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemReportsReportNameCountGet($report_name, $conditions)
 
 
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemReportsReportNameGet**
-> \Spinen\ConnectWise\Clients\System\Model\ReportDataResponse systemReportsReportNameGet($report_name, $conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size, $columns)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ReportDataResponse systemReportsReportNameGet($report_name, $conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size, $columns)
 
 
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\ReportDataResponse**](../Model/ReportDataResponse.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ReportDataResponse**](../Model/ReportDataResponse.md)
 
 ### Authorization
 

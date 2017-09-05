@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -62,7 +62,8 @@ class CallbackEntry implements ArrayAccess
         'type' => 'string',
         'level' => 'string',
         'member_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        'inactive_flag' => 'bool',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -82,6 +83,7 @@ class CallbackEntry implements ArrayAccess
         'type' => 'type',
         'level' => 'level',
         'member_id' => 'memberId',
+        'inactive_flag' => 'inactiveFlag',
         '_info' => '_info'
     ];
 
@@ -98,6 +100,7 @@ class CallbackEntry implements ArrayAccess
         'type' => 'setType',
         'level' => 'setLevel',
         'member_id' => 'setMemberId',
+        'inactive_flag' => 'setInactiveFlag',
         '_info' => 'setInfo'
     ];
 
@@ -114,6 +117,7 @@ class CallbackEntry implements ArrayAccess
         'type' => 'getType',
         'level' => 'getLevel',
         'member_id' => 'getMemberId',
+        'inactive_flag' => 'getInactiveFlag',
         '_info' => 'getInfo'
     ];
 
@@ -155,6 +159,7 @@ class CallbackEntry implements ArrayAccess
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
         $this->container['level'] = isset($data['level']) ? $data['level'] : null;
         $this->container['member_id'] = isset($data['member_id']) ? $data['member_id'] : null;
+        $this->container['inactive_flag'] = isset($data['inactive_flag']) ? $data['inactive_flag'] : null;
         $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
@@ -364,8 +369,29 @@ class CallbackEntry implements ArrayAccess
     }
 
     /**
+     * Gets inactive_flag
+     * @return bool
+     */
+    public function getInactiveFlag()
+    {
+        return $this->container['inactive_flag'];
+    }
+
+    /**
+     * Sets inactive_flag
+     * @param bool $inactive_flag
+     * @return $this
+     */
+    public function setInactiveFlag($inactive_flag)
+    {
+        $this->container['inactive_flag'] = $inactive_flag;
+
+        return $this;
+    }
+
+    /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -374,7 +400,7 @@ class CallbackEntry implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

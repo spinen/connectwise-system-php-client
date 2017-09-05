@@ -90,6 +90,13 @@ Class | Method | HTTP request | Description
 *CallbacksApi* | [**systemCallbacksIdPatch**](docs/Api/CallbacksApi.md#systemcallbacksidpatch) | **PATCH** /system/callbacks/{id} | 
 *CallbacksApi* | [**systemCallbacksIdPut**](docs/Api/CallbacksApi.md#systemcallbacksidput) | **PUT** /system/callbacks/{id} | 
 *CallbacksApi* | [**systemCallbacksPost**](docs/Api/CallbacksApi.md#systemcallbackspost) | **POST** /system/callbacks | 
+*CertificationsApi* | [**systemCertificationsCountGet**](docs/Api/CertificationsApi.md#systemcertificationscountget) | **GET** /system/certifications/count | 
+*CertificationsApi* | [**systemCertificationsGet**](docs/Api/CertificationsApi.md#systemcertificationsget) | **GET** /system/certifications | 
+*CertificationsApi* | [**systemCertificationsIdDelete**](docs/Api/CertificationsApi.md#systemcertificationsiddelete) | **DELETE** /system/certifications/{id} | 
+*CertificationsApi* | [**systemCertificationsIdGet**](docs/Api/CertificationsApi.md#systemcertificationsidget) | **GET** /system/certifications/{id} | 
+*CertificationsApi* | [**systemCertificationsIdPatch**](docs/Api/CertificationsApi.md#systemcertificationsidpatch) | **PATCH** /system/certifications/{id} | 
+*CertificationsApi* | [**systemCertificationsIdPut**](docs/Api/CertificationsApi.md#systemcertificationsidput) | **PUT** /system/certifications/{id} | 
+*CertificationsApi* | [**systemCertificationsPost**](docs/Api/CertificationsApi.md#systemcertificationspost) | **POST** /system/certifications | 
 *ConnectWiseHostedSetupsApi* | [**systemConnectwisehostedsetupsCountGet**](docs/Api/ConnectWiseHostedSetupsApi.md#systemconnectwisehostedsetupscountget) | **GET** /system/connectwisehostedsetups/count | 
 *ConnectWiseHostedSetupsApi* | [**systemConnectwisehostedsetupsGet**](docs/Api/ConnectWiseHostedSetupsApi.md#systemconnectwisehostedsetupsget) | **GET** /system/connectwisehostedsetups | 
 *ConnectWiseHostedSetupsApi* | [**systemConnectwisehostedsetupsIdDelete**](docs/Api/ConnectWiseHostedSetupsApi.md#systemconnectwisehostedsetupsiddelete) | **DELETE** /system/connectwisehostedsetups/{id} | 
@@ -105,6 +112,20 @@ Class | Method | HTTP request | Description
 *DocumentsApi* | [**systemDocumentsIdPost**](docs/Api/DocumentsApi.md#systemdocumentsidpost) | **POST** /system/documents/{id} | 
 *DocumentsApi* | [**systemDocumentsPost**](docs/Api/DocumentsApi.md#systemdocumentspost) | **POST** /system/documents | 
 *DocumentsApi* | [**systemDocumentsUploadsampleGet**](docs/Api/DocumentsApi.md#systemdocumentsuploadsampleget) | **GET** /system/documents/uploadsample | 
+*InOutBoardsApi* | [**systemInOutBoardsCountGet**](docs/Api/InOutBoardsApi.md#systeminoutboardscountget) | **GET** /system/inOutBoards/count | 
+*InOutBoardsApi* | [**systemInOutBoardsGet**](docs/Api/InOutBoardsApi.md#systeminoutboardsget) | **GET** /system/inOutBoards | 
+*InOutBoardsApi* | [**systemInOutBoardsIdDelete**](docs/Api/InOutBoardsApi.md#systeminoutboardsiddelete) | **DELETE** /system/inOutBoards/{id} | 
+*InOutBoardsApi* | [**systemInOutBoardsIdGet**](docs/Api/InOutBoardsApi.md#systeminoutboardsidget) | **GET** /system/inOutBoards/{id} | 
+*InOutBoardsApi* | [**systemInOutBoardsIdPatch**](docs/Api/InOutBoardsApi.md#systeminoutboardsidpatch) | **PATCH** /system/inOutBoards/{id} | 
+*InOutBoardsApi* | [**systemInOutBoardsIdPut**](docs/Api/InOutBoardsApi.md#systeminoutboardsidput) | **PUT** /system/inOutBoards/{id} | 
+*InOutBoardsApi* | [**systemInOutBoardsPost**](docs/Api/InOutBoardsApi.md#systeminoutboardspost) | **POST** /system/inOutBoards | 
+*InOutTypesApi* | [**systemInOutTypesCountGet**](docs/Api/InOutTypesApi.md#systeminouttypescountget) | **GET** /system/inOutTypes/count | 
+*InOutTypesApi* | [**systemInOutTypesGet**](docs/Api/InOutTypesApi.md#systeminouttypesget) | **GET** /system/inOutTypes | 
+*InOutTypesApi* | [**systemInOutTypesIdDelete**](docs/Api/InOutTypesApi.md#systeminouttypesiddelete) | **DELETE** /system/inOutTypes/{id} | 
+*InOutTypesApi* | [**systemInOutTypesIdGet**](docs/Api/InOutTypesApi.md#systeminouttypesidget) | **GET** /system/inOutTypes/{id} | 
+*InOutTypesApi* | [**systemInOutTypesIdPatch**](docs/Api/InOutTypesApi.md#systeminouttypesidpatch) | **PATCH** /system/inOutTypes/{id} | 
+*InOutTypesApi* | [**systemInOutTypesIdPut**](docs/Api/InOutTypesApi.md#systeminouttypesidput) | **PUT** /system/inOutTypes/{id} | 
+*InOutTypesApi* | [**systemInOutTypesPost**](docs/Api/InOutTypesApi.md#systeminouttypespost) | **POST** /system/inOutTypes | 
 *InfoApi* | [**systemInfoGet**](docs/Api/InfoApi.md#systeminfoget) | **GET** /system/info | 
 *LinksApi* | [**systemLinksCountGet**](docs/Api/LinksApi.md#systemlinkscountget) | **GET** /system/links/count | 
 *LinksApi* | [**systemLinksGet**](docs/Api/LinksApi.md#systemlinksget) | **GET** /system/links | 
@@ -113,6 +134,13 @@ Class | Method | HTTP request | Description
 *LinksApi* | [**systemLinksIdPatch**](docs/Api/LinksApi.md#systemlinksidpatch) | **PATCH** /system/links/{id} | 
 *LinksApi* | [**systemLinksIdPut**](docs/Api/LinksApi.md#systemlinksidput) | **PUT** /system/links/{id} | 
 *LinksApi* | [**systemLinksPost**](docs/Api/LinksApi.md#systemlinkspost) | **POST** /system/links | 
+*MemberTypesApi* | [**systemMembersTypesCountGet**](docs/Api/MemberTypesApi.md#systemmemberstypescountget) | **GET** /system/members/types/count | 
+*MemberTypesApi* | [**systemMembersTypesGet**](docs/Api/MemberTypesApi.md#systemmemberstypesget) | **GET** /system/members/types | 
+*MemberTypesApi* | [**systemMembersTypesIdDelete**](docs/Api/MemberTypesApi.md#systemmemberstypesiddelete) | **DELETE** /system/members/types/{id} | 
+*MemberTypesApi* | [**systemMembersTypesIdGet**](docs/Api/MemberTypesApi.md#systemmemberstypesidget) | **GET** /system/members/types/{id} | 
+*MemberTypesApi* | [**systemMembersTypesIdPatch**](docs/Api/MemberTypesApi.md#systemmemberstypesidpatch) | **PATCH** /system/members/types/{id} | 
+*MemberTypesApi* | [**systemMembersTypesIdPut**](docs/Api/MemberTypesApi.md#systemmemberstypesidput) | **PUT** /system/members/types/{id} | 
+*MemberTypesApi* | [**systemMembersTypesPost**](docs/Api/MemberTypesApi.md#systemmemberstypespost) | **POST** /system/members/types | 
 *MembersApi* | [**systemMembersCountGet**](docs/Api/MembersApi.md#systemmemberscountget) | **GET** /system/members/count | 
 *MembersApi* | [**systemMembersGet**](docs/Api/MembersApi.md#systemmembersget) | **GET** /system/members | 
 *MembersApi* | [**systemMembersMemberIdentifierGet**](docs/Api/MembersApi.md#systemmembersmemberidentifierget) | **GET** /system/members/{memberIdentifier} | 
@@ -131,6 +159,27 @@ Class | Method | HTTP request | Description
 *ReportsApi* | [**systemReportsReportNameColumnsGet**](docs/Api/ReportsApi.md#systemreportsreportnamecolumnsget) | **GET** /system/reports/{reportName}/columns | 
 *ReportsApi* | [**systemReportsReportNameCountGet**](docs/Api/ReportsApi.md#systemreportsreportnamecountget) | **GET** /system/reports/{reportName}/count | 
 *ReportsApi* | [**systemReportsReportNameGet**](docs/Api/ReportsApi.md#systemreportsreportnameget) | **GET** /system/reports/{reportName} | 
+*SkillCategoriesApi* | [**systemSkillCategoriesCountGet**](docs/Api/SkillCategoriesApi.md#systemskillcategoriescountget) | **GET** /system/skillCategories/count | 
+*SkillCategoriesApi* | [**systemSkillCategoriesGet**](docs/Api/SkillCategoriesApi.md#systemskillcategoriesget) | **GET** /system/skillCategories | 
+*SkillCategoriesApi* | [**systemSkillCategoriesIdDelete**](docs/Api/SkillCategoriesApi.md#systemskillcategoriesiddelete) | **DELETE** /system/skillCategories/{id} | 
+*SkillCategoriesApi* | [**systemSkillCategoriesIdGet**](docs/Api/SkillCategoriesApi.md#systemskillcategoriesidget) | **GET** /system/skillCategories/{id} | 
+*SkillCategoriesApi* | [**systemSkillCategoriesIdPatch**](docs/Api/SkillCategoriesApi.md#systemskillcategoriesidpatch) | **PATCH** /system/skillCategories/{id} | 
+*SkillCategoriesApi* | [**systemSkillCategoriesIdPut**](docs/Api/SkillCategoriesApi.md#systemskillcategoriesidput) | **PUT** /system/skillCategories/{id} | 
+*SkillCategoriesApi* | [**systemSkillCategoriesPost**](docs/Api/SkillCategoriesApi.md#systemskillcategoriespost) | **POST** /system/skillCategories | 
+*SkillsApi* | [**systemSkillsCountGet**](docs/Api/SkillsApi.md#systemskillscountget) | **GET** /system/skills/count | 
+*SkillsApi* | [**systemSkillsGet**](docs/Api/SkillsApi.md#systemskillsget) | **GET** /system/skills | 
+*SkillsApi* | [**systemSkillsIdDelete**](docs/Api/SkillsApi.md#systemskillsiddelete) | **DELETE** /system/skills/{id} | 
+*SkillsApi* | [**systemSkillsIdGet**](docs/Api/SkillsApi.md#systemskillsidget) | **GET** /system/skills/{id} | 
+*SkillsApi* | [**systemSkillsIdPatch**](docs/Api/SkillsApi.md#systemskillsidpatch) | **PATCH** /system/skills/{id} | 
+*SkillsApi* | [**systemSkillsIdPut**](docs/Api/SkillsApi.md#systemskillsidput) | **PUT** /system/skills/{id} | 
+*SkillsApi* | [**systemSkillsPost**](docs/Api/SkillsApi.md#systemskillspost) | **POST** /system/skills | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesCountGet**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriescountget) | **GET** /system/todayPageCategories/count | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesGet**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriesget) | **GET** /system/todayPageCategories | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesIdDelete**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriesiddelete) | **DELETE** /system/todayPageCategories/{id} | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesIdGet**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriesidget) | **GET** /system/todayPageCategories/{id} | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesIdPatch**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriesidpatch) | **PATCH** /system/todayPageCategories/{id} | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesIdPut**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriesidput) | **PUT** /system/todayPageCategories/{id} | 
+*TodayPageCategoriesApi* | [**systemTodayPageCategoriesPost**](docs/Api/TodayPageCategoriesApi.md#systemtodaypagecategoriespost) | **POST** /system/todayPageCategories | 
 *UserDefinedFieldsApi* | [**systemUserDefinedFieldsCountGet**](docs/Api/UserDefinedFieldsApi.md#systemuserdefinedfieldscountget) | **GET** /system/userDefinedFields/count | 
 *UserDefinedFieldsApi* | [**systemUserDefinedFieldsGet**](docs/Api/UserDefinedFieldsApi.md#systemuserdefinedfieldsget) | **GET** /system/userDefinedFields | 
 *UserDefinedFieldsApi* | [**systemUserDefinedFieldsIdDelete**](docs/Api/UserDefinedFieldsApi.md#systemuserdefinedfieldsiddelete) | **DELETE** /system/userDefinedFields/{id} | 
@@ -148,20 +197,20 @@ Class | Method | HTTP request | Description
  - [BoardReference](docs/Model/BoardReference.md)
  - [CalendarReference](docs/Model/CalendarReference.md)
  - [CallbackEntry](docs/Model/CallbackEntry.md)
+ - [Certification](docs/Model/Certification.md)
+ - [CompanyReference](docs/Model/CompanyReference.md)
  - [ConnectWiseHostedSetup](docs/Model/ConnectWiseHostedSetup.md)
  - [Count](docs/Model/Count.md)
  - [CountryReference](docs/Model/CountryReference.md)
- - [DictionaryStringString_](docs/Model/DictionaryStringString_.md)
  - [DocumentInfo](docs/Model/DocumentInfo.md)
  - [EndpointRequest](docs/Model/EndpointRequest.md)
  - [EndpointResponse](docs/Model/EndpointResponse.md)
  - [Error](docs/Model/Error.md)
- - [ICollection](docs/Model/ICollection.md)
- - [ICollectionString_](docs/Model/ICollectionString_.md)
- - [IEqualityComparerString_](docs/Model/IEqualityComparerString_.md)
+ - [InOutBoard](docs/Model/InOutBoard.md)
+ - [InOutType](docs/Model/InOutType.md)
+ - [InOutTypeReference](docs/Model/InOutTypeReference.md)
  - [Info](docs/Model/Info.md)
  - [JObject](docs/Model/JObject.md)
- - [KeyCollection](docs/Model/KeyCollection.md)
  - [Link](docs/Model/Link.md)
  - [Member](docs/Model/Member.md)
  - [MemberReference](docs/Model/MemberReference.md)
@@ -175,12 +224,16 @@ Class | Method | HTTP request | Description
  - [ReportDataResponse](docs/Model/ReportDataResponse.md)
  - [SecurityRoleReference](docs/Model/SecurityRoleReference.md)
  - [ServiceLocationReference](docs/Model/ServiceLocationReference.md)
+ - [Skill](docs/Model/Skill.md)
+ - [SkillCategory](docs/Model/SkillCategory.md)
+ - [SkillCategoryReference](docs/Model/SkillCategoryReference.md)
  - [TimeZoneReference](docs/Model/TimeZoneReference.md)
+ - [TodayPageCategory](docs/Model/TodayPageCategory.md)
  - [Token](docs/Model/Token.md)
+ - [Type](docs/Model/Type.md)
  - [UserDefinedField](docs/Model/UserDefinedField.md)
  - [UserDefinedFieldOption](docs/Model/UserDefinedFieldOption.md)
  - [ValidationError](docs/Model/ValidationError.md)
- - [ValueCollection](docs/Model/ValueCollection.md)
  - [WarehouseBinReference](docs/Model/WarehouseBinReference.md)
  - [WarehouseReference](docs/Model/WarehouseReference.md)
  - [WorkRoleReference](docs/Model/WorkRoleReference.md)

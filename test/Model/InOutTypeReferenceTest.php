@@ -1,6 +1,6 @@
 <?php
 /**
- * ValueCollectionTest
+ * InOutTypeReferenceTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Spinen\ConnectWise\Clients\System;
 
 /**
- * ValueCollectionTest Class Doc Comment
+ * InOutTypeReferenceTest Class Doc Comment
  *
  * @category    Class */
-// * @description ValueCollection
+// * @description InOutTypeReference
 /**
  * @package     Spinen\ConnectWise\Clients\System
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ValueCollectionTest extends \PHPUnit_Framework_TestCase
+class InOutTypeReferenceTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,41 +75,33 @@ class ValueCollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ValueCollection"
+     * Test "InOutTypeReference"
      */
-    public function testValueCollection()
+    public function testInOutTypeReference()
     {
 
     }
 
     /**
-     * Test attribute "count"
+     * Test attribute "id"
      */
-    public function testPropertyCount()
+    public function testPropertyId()
     {
 
     }
 
     /**
-     * Test attribute "system_collections_generic_i_collection_t_value_is_read_only"
+     * Test attribute "name"
      */
-    public function testPropertySystemCollectionsGenericICollectionTValueIsReadOnly()
+    public function testPropertyName()
     {
 
     }
 
     /**
-     * Test attribute "system_collections_i_collection_is_synchronized"
+     * Test attribute "_info"
      */
-    public function testPropertySystemCollectionsICollectionIsSynchronized()
-    {
-
-    }
-
-    /**
-     * Test attribute "system_collections_i_collection_sync_root"
-     */
-    public function testPropertySystemCollectionsICollectionSyncRoot()
+    public function testPropertyInfo()
     {
 
     }

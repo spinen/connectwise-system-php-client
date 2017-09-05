@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Api;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Api;
 
 use \Spinen\ConnectWise\Clients\System\ApiClient;
 use \Spinen\ConnectWise\Clients\System\ApiException;
@@ -96,7 +96,7 @@ class LinksApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Count
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count
      */
     public function systemLinksCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class LinksApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Count',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count',
                 '/system/links/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class LinksApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Link[]
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link[]
      */
     public function systemLinksGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class LinksApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Link[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link[], HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Link[]',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link[]',
                 '/system/links'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Link[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Link[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -379,7 +379,7 @@ class LinksApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -397,7 +397,7 @@ class LinksApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Link
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link
      */
     public function systemLinksIdGet($id)
     {
@@ -414,7 +414,7 @@ class LinksApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksIdGetWithHttpInfo($id)
     {
@@ -464,19 +464,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Link',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link',
                 '/system/links/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -493,9 +493,9 @@ class LinksApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Link
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link
      */
     public function systemLinksIdPatch($id, $operations)
     {
@@ -511,9 +511,9 @@ class LinksApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksIdPatchWithHttpInfo($id, $operations)
     {
@@ -572,19 +572,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Link',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link',
                 '/system/links/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -601,9 +601,9 @@ class LinksApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Link
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link
      */
     public function systemLinksIdPut($id, $link)
     {
@@ -619,9 +619,9 @@ class LinksApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksIdPutWithHttpInfo($id, $link)
     {
@@ -680,19 +680,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Link',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link',
                 '/system/links/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -708,9 +708,9 @@ class LinksApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Link
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link
      */
     public function systemLinksPost($link)
     {
@@ -725,9 +725,9 @@ class LinksApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link $link  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemLinksPostWithHttpInfo($link)
     {
@@ -774,19 +774,19 @@ class LinksApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Link',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link',
                 '/system/links'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Link', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

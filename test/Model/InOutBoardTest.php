@@ -1,6 +1,6 @@
 <?php
 /**
- * IEqualityComparerString_Test
+ * InOutBoardTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Spinen\ConnectWise\Clients\System;
 
 /**
- * IEqualityComparerString_Test Class Doc Comment
+ * InOutBoardTest Class Doc Comment
  *
  * @category    Class */
-// * @description IEqualityComparerString_
+// * @description InOutBoard
 /**
  * @package     Spinen\ConnectWise\Clients\System
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class IEqualityComparerString_Test extends \PHPUnit_Framework_TestCase
+class InOutBoardTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,9 +75,57 @@ class IEqualityComparerString_Test extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "IEqualityComparerString_"
+     * Test "InOutBoard"
      */
-    public function testIEqualityComparerString_()
+    public function testInOutBoard()
+    {
+
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+
+    }
+
+    /**
+     * Test attribute "member"
+     */
+    public function testPropertyMember()
+    {
+
+    }
+
+    /**
+     * Test attribute "in_out_type"
+     */
+    public function testPropertyInOutType()
+    {
+
+    }
+
+    /**
+     * Test attribute "additional_info"
+     */
+    public function testPropertyAdditionalInfo()
+    {
+
+    }
+
+    /**
+     * Test attribute "date_back"
+     */
+    public function testPropertyDateBack()
+    {
+
+    }
+
+    /**
+     * Test attribute "_info"
+     */
+    public function testPropertyInfo()
     {
 
     }

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -70,7 +70,7 @@ class ConnectWiseHostedSetup implements ArrayAccess
         'disabled_flag' => 'bool',
         'created_by' => 'string',
         'date_created' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -521,7 +521,7 @@ class ConnectWiseHostedSetup implements ArrayAccess
 
     /**
      * Sets toolbar_button_text
-     * @param string $toolbar_button_text
+     * @param string $toolbar_button_text Only required for ToolbarButtons
      * @return $this
      */
     public function setToolbarButtonText($toolbar_button_text)
@@ -646,7 +646,7 @@ class ConnectWiseHostedSetup implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -655,7 +655,7 @@ class ConnectWiseHostedSetup implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

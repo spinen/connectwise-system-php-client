@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **systemDocumentsCountGet**
-> \Spinen\ConnectWise\Clients\System\Model\Count systemDocumentsCountGet($record_type, $record_id)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemDocumentsCountGet($record_type, $record_id)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsGet**
-> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo[] systemDocumentsGet($record_type, $record_id, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[] systemDocumentsGet($record_type, $record_id, $page, $page_size)
 
 
 
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsIdGet**
-> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdGet($id)
 
 
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsIdPost**
-> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdPost($id, $record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdPost($id, $record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag)
 
 
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsPost**
-> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsPost($record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag)
+> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsPost($record_type, $title, $url, $file, $record_id, $private_flag, $read_only_flag)
 
 
 
@@ -348,16 +348,16 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\DocumentsApi();
-$record_id = 56; // int | Entity id
 $record_type = "record_type_example"; // string | Entity type
 $title = "title_example"; // string | Document title
 $url = "url_example"; // string | Document url
 $file = "/path/to/file.txt"; // \SplFileObject | File to upload
+$record_id = 56; // int | Entity id
 $private_flag = true; // bool | Indicates if document is private
 $read_only_flag = true; // bool | Indicates if document is readonly
 
 try {
-    $result = $api_instance->systemDocumentsPost($record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag);
+    $result = $api_instance->systemDocumentsPost($record_type, $title, $url, $file, $record_id, $private_flag, $read_only_flag);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DocumentsApi->systemDocumentsPost: ', $e->getMessage(), PHP_EOL;
@@ -369,17 +369,17 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **record_id** | **int**| Entity id |
  **record_type** | **string**| Entity type |
  **title** | **string**| Document title |
  **url** | **string**| Document url |
  **file** | **\SplFileObject**| File to upload | [optional]
+ **record_id** | **int**| Entity id | [optional]
  **private_flag** | **bool**| Indicates if document is private | [optional]
  **read_only_flag** | **bool**| Indicates if document is readonly | [optional]
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 

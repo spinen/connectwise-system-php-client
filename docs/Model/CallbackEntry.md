@@ -10,7 +10,8 @@ Name | Type | Description | Notes
 **type** | **string** |  | 
 **level** | **string** |  | 
 **member_id** | **int** |  | [optional] 
-**_info** | [**\Spinen\ConnectWise\Clients\System\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
+**inactive_flag** | **bool** |  | [optional] 
+**_info** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

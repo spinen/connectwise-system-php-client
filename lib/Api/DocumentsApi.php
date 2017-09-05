@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Api;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Api;
 
 use \Spinen\ConnectWise\Clients\System\ApiClient;
 use \Spinen\ConnectWise\Clients\System\ApiException;
@@ -97,7 +97,7 @@ class DocumentsApi
      * @param string $record_type  (optional)
      * @param int $record_id  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\Count
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count
      */
     public function systemDocumentsCountGet($record_type = null, $record_id = null)
     {
@@ -115,7 +115,7 @@ class DocumentsApi
      * @param string $record_type  (optional)
      * @param int $record_id  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemDocumentsCountGetWithHttpInfo($record_type = null, $record_id = null)
     {
@@ -161,19 +161,19 @@ class DocumentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\Count',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count',
                 '/system/documents/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -194,7 +194,7 @@ class DocumentsApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]
      */
     public function systemDocumentsGet($record_type = null, $record_id = null, $page = null, $page_size = null)
     {
@@ -214,7 +214,7 @@ class DocumentsApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\DocumentInfo[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[], HTTP status code, HTTP response headers (array of strings)
      */
     public function systemDocumentsGetWithHttpInfo($record_type = null, $record_id = null, $page = null, $page_size = null)
     {
@@ -268,19 +268,19 @@ class DocumentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]',
                 '/system/documents'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -373,7 +373,7 @@ class DocumentsApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -472,7 +472,7 @@ class DocumentsApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -490,7 +490,7 @@ class DocumentsApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\DocumentInfo
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo
      */
     public function systemDocumentsIdGet($id)
     {
@@ -507,7 +507,7 @@ class DocumentsApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemDocumentsIdGetWithHttpInfo($id)
     {
@@ -557,19 +557,19 @@ class DocumentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
                 '/system/documents/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -594,7 +594,7 @@ class DocumentsApi
      * @param bool $private_flag Indicates if document is private (optional)
      * @param bool $read_only_flag Indicates if document is readonly (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\DocumentInfo
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo
      */
     public function systemDocumentsIdPost($id, $record_id, $record_type, $title, $url, $file = null, $private_flag = null, $read_only_flag = null)
     {
@@ -618,7 +618,7 @@ class DocumentsApi
      * @param bool $private_flag Indicates if document is private (optional)
      * @param bool $read_only_flag Indicates if document is readonly (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemDocumentsIdPostWithHttpInfo($id, $record_id, $record_type, $title, $url, $file = null, $private_flag = null, $read_only_flag = null)
     {
@@ -726,19 +726,19 @@ class DocumentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
                 '/system/documents/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -754,19 +754,19 @@ class DocumentsApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param int $record_id Entity id (required)
      * @param string $record_type Entity type (required)
      * @param string $title Document title (required)
      * @param string $url Document url (required)
      * @param \SplFileObject $file File to upload (optional)
+     * @param int $record_id Entity id (optional)
      * @param bool $private_flag Indicates if document is private (optional)
      * @param bool $read_only_flag Indicates if document is readonly (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Model\DocumentInfo
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo
      */
-    public function systemDocumentsPost($record_id, $record_type, $title, $url, $file = null, $private_flag = null, $read_only_flag = null)
+    public function systemDocumentsPost($record_type, $title, $url, $file = null, $record_id = null, $private_flag = null, $read_only_flag = null)
     {
-        list($response) = $this->systemDocumentsPostWithHttpInfo($record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag);
+        list($response) = $this->systemDocumentsPostWithHttpInfo($record_type, $title, $url, $file, $record_id, $private_flag, $read_only_flag);
         return $response;
     }
 
@@ -777,22 +777,18 @@ class DocumentsApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param int $record_id Entity id (required)
      * @param string $record_type Entity type (required)
      * @param string $title Document title (required)
      * @param string $url Document url (required)
      * @param \SplFileObject $file File to upload (optional)
+     * @param int $record_id Entity id (optional)
      * @param bool $private_flag Indicates if document is private (optional)
      * @param bool $read_only_flag Indicates if document is readonly (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo, HTTP status code, HTTP response headers (array of strings)
      */
-    public function systemDocumentsPostWithHttpInfo($record_id, $record_type, $title, $url, $file = null, $private_flag = null, $read_only_flag = null)
+    public function systemDocumentsPostWithHttpInfo($record_type, $title, $url, $file = null, $record_id = null, $private_flag = null, $read_only_flag = null)
     {
-        // verify the required parameter 'record_id' is set
-        if ($record_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $record_id when calling systemDocumentsPost');
-        }
         // verify the required parameter 'record_type' is set
         if ($record_type === null) {
             throw new \InvalidArgumentException('Missing the required parameter $record_type when calling systemDocumentsPost');
@@ -881,19 +877,19 @@ class DocumentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
+                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo',
                 '/system/documents'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -972,7 +968,7 @@ class DocumentsApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

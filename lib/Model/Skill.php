@@ -1,6 +1,6 @@
 <?php
 /**
- * IEqualityComparerString_
+ * Skill
  *
  * PHP version 5
  *
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
 /**
- * IEqualityComparerString_ Class Doc Comment
+ * Skill Class Doc Comment
  *
  * @category    Class */
 /**
@@ -40,7 +40,7 @@ use \ArrayAccess;
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class IEqualityComparerString_ implements ArrayAccess
+class Skill implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -48,14 +48,17 @@ class IEqualityComparerString_ implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'IEqualityComparer&lt;string&gt;';
+    protected static $swaggerModelName = 'Skill';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'id' => 'int',
+        'name' => 'string',
+        'category' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -68,7 +71,10 @@ class IEqualityComparerString_ implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'id' => 'id',
+        'name' => 'name',
+        'category' => 'category',
+        '_info' => '_info'
     ];
 
 
@@ -77,7 +83,10 @@ class IEqualityComparerString_ implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'id' => 'setId',
+        'name' => 'setName',
+        'category' => 'setCategory',
+        '_info' => 'setInfo'
     ];
 
 
@@ -86,7 +95,10 @@ class IEqualityComparerString_ implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'id' => 'getId',
+        'name' => 'getName',
+        'category' => 'getCategory',
+        '_info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -120,6 +132,10 @@ class IEqualityComparerString_ implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
+        $this->container['category'] = isset($data['category']) ? $data['category'] : null;
+        $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
     /**
@@ -130,6 +146,16 @@ class IEqualityComparerString_ implements ArrayAccess
     public function listInvalidProperties()
     {
         $invalid_properties = [];
+        if ($this->container['name'] === null) {
+            $invalid_properties[] = "'name' can't be null";
+        }
+        if ((strlen($this->container['name']) > 50)) {
+            $invalid_properties[] = "invalid value for 'name', the character length must be smaller than or equal to 50.";
+        }
+
+        if ($this->container['category'] === null) {
+            $invalid_properties[] = "'category' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -141,9 +167,106 @@ class IEqualityComparerString_ implements ArrayAccess
      */
     public function valid()
     {
+        if ($this->container['name'] === null) {
+            return false;
+        }
+        if (strlen($this->container['name']) > 50) {
+            return false;
+        }
+        if ($this->container['category'] === null) {
+            return false;
+        }
         return true;
     }
 
+
+    /**
+     * Gets id
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     * @param string $name
+     * @return $this
+     */
+    public function setName($name)
+    {
+        if ((strlen($name) > 50)) {
+            throw new \InvalidArgumentException('invalid length for $name when calling Skill., must be smaller than or equal to 50.');
+        }
+
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets category
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference
+     */
+    public function getCategory()
+    {
+        return $this->container['category'];
+    }
+
+    /**
+     * Sets category
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference $category
+     * @return $this
+     */
+    public function setCategory($category)
+    {
+        $this->container['category'] = $category;
+
+        return $this;
+    }
+
+    /**
+     * Gets _info
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     */
+    public function getInfo()
+    {
+        return $this->container['_info'];
+    }
+
+    /**
+     * Sets _info
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @return $this
+     */
+    public function setInfo($_info)
+    {
+        $this->container['_info'] = $_info;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset

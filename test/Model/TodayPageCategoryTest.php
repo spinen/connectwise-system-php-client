@@ -1,6 +1,6 @@
 <?php
 /**
- * ICollectionString_Test
+ * TodayPageCategoryTest
  *
  * PHP version 5
  *
@@ -30,16 +30,16 @@
 namespace Spinen\ConnectWise\Clients\System;
 
 /**
- * ICollectionString_Test Class Doc Comment
+ * TodayPageCategoryTest Class Doc Comment
  *
  * @category    Class */
-// * @description ICollectionString_
+// * @description TodayPageCategory
 /**
  * @package     Spinen\ConnectWise\Clients\System
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ICollectionString_Test extends \PHPUnit_Framework_TestCase
+class TodayPageCategoryTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -75,9 +75,49 @@ class ICollectionString_Test extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ICollectionString_"
+     * Test "TodayPageCategory"
      */
-    public function testICollectionString_()
+    public function testTodayPageCategory()
+    {
+
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+
+    }
+
+    /**
+     * Test attribute "name"
+     */
+    public function testPropertyName()
+    {
+
+    }
+
+    /**
+     * Test attribute "sort_order"
+     */
+    public function testPropertySortOrder()
+    {
+
+    }
+
+    /**
+     * Test attribute "location_id"
+     */
+    public function testPropertyLocationId()
+    {
+
+    }
+
+    /**
+     * Test attribute "_info"
+     */
+    public function testPropertyInfo()
     {
 
     }

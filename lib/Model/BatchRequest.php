@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -56,8 +56,8 @@ class BatchRequest implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'requests' => '\Spinen\ConnectWise\Clients\System\Model\EndpointRequest[]',
-        'headers' => '\Spinen\ConnectWise\Clients\System\Model\DictionaryStringString_'
+        'requests' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointRequest[]',
+        'headers' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -179,7 +179,7 @@ class BatchRequest implements ArrayAccess
 
     /**
      * Gets requests
-     * @return \Spinen\ConnectWise\Clients\System\Model\EndpointRequest[]
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointRequest[]
      */
     public function getRequests()
     {
@@ -188,7 +188,7 @@ class BatchRequest implements ArrayAccess
 
     /**
      * Sets requests
-     * @param \Spinen\ConnectWise\Clients\System\Model\EndpointRequest[] $requests
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointRequest[] $requests
      * @return $this
      */
     public function setRequests($requests)
@@ -200,7 +200,7 @@ class BatchRequest implements ArrayAccess
 
     /**
      * Gets headers
-     * @return \Spinen\ConnectWise\Clients\System\Model\DictionaryStringString_
+     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getHeaders()
     {
@@ -209,7 +209,7 @@ class BatchRequest implements ArrayAccess
 
     /**
      * Sets headers
-     * @param \Spinen\ConnectWise\Clients\System\Model\DictionaryStringString_ $headers
+     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $headers Metadata of the entity
      * @return $this
      */
     public function setHeaders($headers)
