@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **image_flag** | **bool** |  | [optional] 
 **public_flag** | **bool** |  | [optional] 
 **read_only_flag** | **bool** |  | [optional] 
-**_info** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
+**_info** | [**\Spinen\ConnectWise\Clients\System\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

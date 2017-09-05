@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **systemInfoGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Info systemInfoGet()
+> \Spinen\ConnectWise\Clients\System\Model\Info systemInfoGet()
 
 
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Info**](../Model/Info.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Info**](../Model/Info.md)
 
 ### Authorization
 

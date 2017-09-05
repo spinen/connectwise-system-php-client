@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **systemDocumentsCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemDocumentsCountGet($record_type, $record_id)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemDocumentsCountGet($record_type, $record_id)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[] systemDocumentsGet($record_type, $record_id, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo[] systemDocumentsGet($record_type, $record_id, $page, $page_size)
 
 
 
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo[]**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdGet($id)
 
 
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsIdPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdPost($id, $record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag)
+> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsIdPost($id, $record_id, $record_type, $title, $url, $file, $private_flag, $read_only_flag)
 
 
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemDocumentsPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsPost($record_type, $title, $url, $file, $record_id, $private_flag, $read_only_flag)
+> \Spinen\ConnectWise\Clients\System\Model\DocumentInfo systemDocumentsPost($record_type, $title, $url, $file, $record_id, $private_flag, $read_only_flag)
 
 
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
+[**\Spinen\ConnectWise\Clients\System\Model\DocumentInfo**](../Model/DocumentInfo.md)
 
 ### Authorization
 

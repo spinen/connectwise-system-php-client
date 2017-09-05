@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -59,7 +59,7 @@ class TodayPageCategory implements ArrayAccess
         'name' => 'string',
         'sort_order' => 'int',
         'location_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -269,7 +269,7 @@ class TodayPageCategory implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -278,7 +278,7 @@ class TodayPageCategory implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

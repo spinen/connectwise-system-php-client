@@ -96,7 +96,7 @@ class MenuEntriesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count
+     * @return \Spinen\ConnectWise\Clients\System\Model\Count
      */
     public function systemMenuentriesCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class MenuEntriesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count',
+                '\Spinen\ConnectWise\Clients\System\Model\Count',
                 '/system/menuentries/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class MenuEntriesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuEntry[]
      */
     public function systemMenuentriesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class MenuEntriesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\MenuEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]',
+                '\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]',
                 '/system/menuentries'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\MenuEntry[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -379,7 +379,7 @@ class MenuEntriesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -397,7 +397,7 @@ class MenuEntriesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuEntry
      */
     public function systemMenuentriesIdGet($id)
     {
@@ -414,7 +414,7 @@ class MenuEntriesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesIdGetWithHttpInfo($id)
     {
@@ -464,19 +464,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
+                '\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
                 '/system/menuentries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -581,7 +581,7 @@ class MenuEntriesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -686,7 +686,7 @@ class MenuEntriesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -703,9 +703,9 @@ class MenuEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuEntry
      */
     public function systemMenuentriesIdPatch($id, $operations)
     {
@@ -721,9 +721,9 @@ class MenuEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesIdPatchWithHttpInfo($id, $operations)
     {
@@ -782,19 +782,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
+                '\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
                 '/system/menuentries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -811,9 +811,9 @@ class MenuEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuEntry
      */
     public function systemMenuentriesIdPut($id, $menu_entry)
     {
@@ -829,9 +829,9 @@ class MenuEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesIdPutWithHttpInfo($id, $menu_entry)
     {
@@ -890,19 +890,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
+                '\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
                 '/system/menuentries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -918,9 +918,9 @@ class MenuEntriesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuEntry
      */
     public function systemMenuentriesPost($menu_entry)
     {
@@ -935,9 +935,9 @@ class MenuEntriesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for System API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\System\Model\MenuEntry $menu_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\System\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\System\Model\MenuEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function systemMenuentriesPostWithHttpInfo($menu_entry)
     {
@@ -984,19 +984,19 @@ class MenuEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
+                '\Spinen\ConnectWise\Clients\System\Model\MenuEntry',
                 '/system/menuentries'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\MenuEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\System\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

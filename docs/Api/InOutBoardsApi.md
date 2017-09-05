@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemInOutBoardsCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemInOutBoardsCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemInOutBoardsCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutBoardsGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard[] systemInOutBoardsGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\InOutBoard[] systemInOutBoardsGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard[]**](../Model/InOutBoard.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutBoard[]**](../Model/InOutBoard.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutBoardsIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutBoardsIdPatch**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutBoardsApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemInOutBoardsIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutBoardsIdPut**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdPut($id, $in_out_board)
+> \Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsIdPut($id, $in_out_board)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutBoardsApi();
 $id = 56; // int | 
-$in_out_board = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard | 
+$in_out_board = new \Spinen\ConnectWise\Clients\System\Model\InOutBoard(); // \Spinen\ConnectWise\Clients\System\Model\InOutBoard | 
 
 try {
     $result = $api_instance->systemInOutBoardsIdPut($id, $in_out_board);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **in_out_board** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard.md)|  |
+ **in_out_board** | [**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/\Spinen\ConnectWise\Clients\System\Model\InOutBoard.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutBoardsPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsPost($in_out_board)
+> \Spinen\ConnectWise\Clients\System\Model\InOutBoard systemInOutBoardsPost($in_out_board)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutBoardsApi();
-$in_out_board = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard | 
+$in_out_board = new \Spinen\ConnectWise\Clients\System\Model\InOutBoard(); // \Spinen\ConnectWise\Clients\System\Model\InOutBoard | 
 
 try {
     $result = $api_instance->systemInOutBoardsPost($in_out_board);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **in_out_board** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard.md)|  |
+ **in_out_board** | [**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/\Spinen\ConnectWise\Clients\System\Model\InOutBoard.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutBoard**](../Model/InOutBoard.md)
 
 ### Authorization
 

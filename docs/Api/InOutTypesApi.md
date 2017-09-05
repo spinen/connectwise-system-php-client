@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemInOutTypesCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemInOutTypesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemInOutTypesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutTypesGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType[] systemInOutTypesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\InOutType[] systemInOutTypesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType[]**](../Model/InOutType.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutType[]**](../Model/InOutType.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutTypesIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutTypesIdPatch**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutTypesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemInOutTypesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutTypesIdPut**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdPut($id, $in_out_type)
+> \Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesIdPut($id, $in_out_type)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutTypesApi();
 $id = 56; // int | 
-$in_out_type = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType | 
+$in_out_type = new \Spinen\ConnectWise\Clients\System\Model\InOutType(); // \Spinen\ConnectWise\Clients\System\Model\InOutType | 
 
 try {
     $result = $api_instance->systemInOutTypesIdPut($id, $in_out_type);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **in_out_type** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType.md)|  |
+ **in_out_type** | [**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/\Spinen\ConnectWise\Clients\System\Model\InOutType.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemInOutTypesPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesPost($in_out_type)
+> \Spinen\ConnectWise\Clients\System\Model\InOutType systemInOutTypesPost($in_out_type)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\InOutTypesApi();
-$in_out_type = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType | 
+$in_out_type = new \Spinen\ConnectWise\Clients\System\Model\InOutType(); // \Spinen\ConnectWise\Clients\System\Model\InOutType | 
 
 try {
     $result = $api_instance->systemInOutTypesPost($in_out_type);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **in_out_type** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType.md)|  |
+ **in_out_type** | [**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/\Spinen\ConnectWise\Clients\System\Model\InOutType.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
+[**\Spinen\ConnectWise\Clients\System\Model\InOutType**](../Model/InOutType.md)
 
 ### Authorization
 

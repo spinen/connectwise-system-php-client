@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -55,8 +55,8 @@ class ReportDataResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'column_definitions' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[]',
-        'row_values' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[]'
+        'column_definitions' => '\Spinen\ConnectWise\Clients\System\Model\JObject[]',
+        'row_values' => '\Spinen\ConnectWise\Clients\System\Model\JObject[]'
     ];
 
     public static function swaggerTypes()
@@ -153,7 +153,7 @@ class ReportDataResponse implements ArrayAccess
 
     /**
      * Gets column_definitions
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[]
+     * @return \Spinen\ConnectWise\Clients\System\Model\JObject[]
      */
     public function getColumnDefinitions()
     {
@@ -162,7 +162,7 @@ class ReportDataResponse implements ArrayAccess
 
     /**
      * Sets column_definitions
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[] $column_definitions
+     * @param \Spinen\ConnectWise\Clients\System\Model\JObject[] $column_definitions
      * @return $this
      */
     public function setColumnDefinitions($column_definitions)
@@ -174,7 +174,7 @@ class ReportDataResponse implements ArrayAccess
 
     /**
      * Gets row_values
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[]
+     * @return \Spinen\ConnectWise\Clients\System\Model\JObject[]
      */
     public function getRowValues()
     {
@@ -183,7 +183,7 @@ class ReportDataResponse implements ArrayAccess
 
     /**
      * Sets row_values
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\JObject[] $row_values
+     * @param \Spinen\ConnectWise\Clients\System\Model\JObject[] $row_values
      * @return $this
      */
     public function setRowValues($row_values)

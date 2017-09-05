@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemSkillCategoriesCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemSkillCategoriesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemSkillCategoriesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemSkillCategoriesGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory[] systemSkillCategoriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\SkillCategory[] systemSkillCategoriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory[]**](../Model/SkillCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\SkillCategory[]**](../Model/SkillCategory.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemSkillCategoriesIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemSkillCategoriesIdPatch**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\SkillCategoriesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemSkillCategoriesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemSkillCategoriesIdPut**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdPut($id, $skill_category)
+> \Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesIdPut($id, $skill_category)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\SkillCategoriesApi();
 $id = 56; // int | 
-$skill_category = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory | 
+$skill_category = new \Spinen\ConnectWise\Clients\System\Model\SkillCategory(); // \Spinen\ConnectWise\Clients\System\Model\SkillCategory | 
 
 try {
     $result = $api_instance->systemSkillCategoriesIdPut($id, $skill_category);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **skill_category** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory.md)|  |
+ **skill_category** | [**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/\Spinen\ConnectWise\Clients\System\Model\SkillCategory.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemSkillCategoriesPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesPost($skill_category)
+> \Spinen\ConnectWise\Clients\System\Model\SkillCategory systemSkillCategoriesPost($skill_category)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\SkillCategoriesApi();
-$skill_category = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory | 
+$skill_category = new \Spinen\ConnectWise\Clients\System\Model\SkillCategory(); // \Spinen\ConnectWise\Clients\System\Model\SkillCategory | 
 
 try {
     $result = $api_instance->systemSkillCategoriesPost($skill_category);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **skill_category** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory.md)|  |
+ **skill_category** | [**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/\Spinen\ConnectWise\Clients\System\Model\SkillCategory.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\SkillCategory**](../Model/SkillCategory.md)
 
 ### Authorization
 

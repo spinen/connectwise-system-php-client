@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -57,8 +57,8 @@ class Skill implements ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'name' => 'string',
-        'category' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        'category' => '\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -228,7 +228,7 @@ class Skill implements ArrayAccess
 
     /**
      * Gets category
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference
      */
     public function getCategory()
     {
@@ -237,7 +237,7 @@ class Skill implements ArrayAccess
 
     /**
      * Sets category
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference $category
+     * @param \Spinen\ConnectWise\Clients\System\Model\SkillCategoryReference $category
      * @return $this
      */
     public function setCategory($category)
@@ -249,7 +249,7 @@ class Skill implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -258,7 +258,7 @@ class Skill implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

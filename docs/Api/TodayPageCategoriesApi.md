@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemTodayPageCategoriesCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemTodayPageCategoriesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemTodayPageCategoriesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemTodayPageCategoriesGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory[] systemTodayPageCategoriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory[] systemTodayPageCategoriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory[]**](../Model/TodayPageCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory[]**](../Model/TodayPageCategory.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemTodayPageCategoriesIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemTodayPageCategoriesIdPatch**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\TodayPageCategoriesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemTodayPageCategoriesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemTodayPageCategoriesIdPut**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdPut($id, $today_page_category)
+> \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesIdPut($id, $today_page_category)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\TodayPageCategoriesApi();
 $id = 56; // int | 
-$today_page_category = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory | 
+$today_page_category = new \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory(); // \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory | 
 
 try {
     $result = $api_instance->systemTodayPageCategoriesIdPut($id, $today_page_category);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **today_page_category** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory.md)|  |
+ **today_page_category** | [**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemTodayPageCategoriesPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesPost($today_page_category)
+> \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory systemTodayPageCategoriesPost($today_page_category)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\TodayPageCategoriesApi();
-$today_page_category = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory | 
+$today_page_category = new \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory(); // \Spinen\ConnectWise\Clients\System\Model\TodayPageCategory | 
 
 try {
     $result = $api_instance->systemTodayPageCategoriesPost($today_page_category);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **today_page_category** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory.md)|  |
+ **today_page_category** | [**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
+[**\Spinen\ConnectWise\Clients\System\Model\TodayPageCategory**](../Model/TodayPageCategory.md)
 
 ### Authorization
 

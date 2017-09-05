@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -56,7 +56,7 @@ class MenuEntry implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'menu_location' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuLocationReference',
+        'menu_location' => '\Spinen\ConnectWise\Clients\System\Model\MenuLocationReference',
         'caption' => 'string',
         'link' => 'string',
         'new_window_flag' => 'bool',
@@ -66,7 +66,7 @@ class MenuEntry implements ArrayAccess
         'remove_all_locations' => 'bool',
         'small_menu_icon_id' => 'int',
         'large_menu_icon_id' => 'int',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -269,7 +269,7 @@ class MenuEntry implements ArrayAccess
 
     /**
      * Gets menu_location
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuLocationReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MenuLocationReference
      */
     public function getMenuLocation()
     {
@@ -278,7 +278,7 @@ class MenuEntry implements ArrayAccess
 
     /**
      * Sets menu_location
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MenuLocationReference $menu_location
+     * @param \Spinen\ConnectWise\Clients\System\Model\MenuLocationReference $menu_location
      * @return $this
      */
     public function setMenuLocation($menu_location)
@@ -491,7 +491,7 @@ class MenuEntry implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -500,7 +500,7 @@ class MenuEntry implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

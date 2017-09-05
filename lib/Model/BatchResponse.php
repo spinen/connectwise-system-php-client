@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -56,7 +56,7 @@ class BatchResponse implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'responses' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointResponse[]'
+        'responses' => '\Spinen\ConnectWise\Clients\System\Model\EndpointResponse[]'
     ];
 
     public static function swaggerTypes()
@@ -174,7 +174,7 @@ class BatchResponse implements ArrayAccess
 
     /**
      * Gets responses
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointResponse[]
+     * @return \Spinen\ConnectWise\Clients\System\Model\EndpointResponse[]
      */
     public function getResponses()
     {
@@ -183,7 +183,7 @@ class BatchResponse implements ArrayAccess
 
     /**
      * Sets responses
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\EndpointResponse[] $responses
+     * @param \Spinen\ConnectWise\Clients\System\Model\EndpointResponse[] $responses
      * @return $this
      */
     public function setResponses($responses)

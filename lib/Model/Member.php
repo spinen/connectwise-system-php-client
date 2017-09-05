@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -59,9 +59,9 @@ class Member implements ArrayAccess
         'allow_expenses_entered_against_companies_flag' => 'bool',
         'allow_in_cell_entry_on_time_sheet' => 'bool',
         'billable_forecast' => 'double',
-        'calendar' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CalendarReference',
+        'calendar' => '\Spinen\ConnectWise\Clients\System\Model\CalendarReference',
         'calendar_sync_integration_flag' => 'bool',
-        'country' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CountryReference',
+        'country' => '\Spinen\ConnectWise\Clients\System\Model\CountryReference',
         'daily_capacity' => 'double',
         'days_tolerance' => 'int',
         'default_department_id' => 'int',
@@ -73,7 +73,7 @@ class Member implements ArrayAccess
         'enable_mobile_flag' => 'bool',
         'enable_mobile_gps_flag' => 'bool',
         'enter_time_against_company_flag' => 'bool',
-        'expense_approver' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference',
+        'expense_approver' => '\Spinen\ConnectWise\Clients\System\Model\MemberReference',
         'first_name' => 'string',
         'hide_member_in_dispatch_portal_flag' => 'bool',
         'hire_date' => '\DateTime',
@@ -100,10 +100,10 @@ class Member implements ArrayAccess
         'office_email' => 'string',
         'office_extension' => 'string',
         'office_phone' => 'string',
-        'project_default_board' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference',
+        'project_default_board' => '\Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference',
         'project_default_department_id' => 'int',
         'project_default_location_id' => 'int',
-        'reports_to' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference',
+        'reports_to' => '\Spinen\ConnectWise\Clients\System\Model\MemberReference',
         'require_expense_entry_flag' => 'bool',
         'require_start_and_end_time_on_time_entry_flag' => 'bool',
         'require_time_sheet_entry_flag' => 'bool',
@@ -123,24 +123,24 @@ class Member implements ArrayAccess
         'schedule_default_location_id' => 'int',
         'security_level' => 'string',
         'security_location_id' => 'int',
-        'security_role' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference',
-        'service_default_board' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BoardReference',
+        'security_role' => '\Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference',
+        'service_default_board' => '\Spinen\ConnectWise\Clients\System\Model\BoardReference',
         'service_default_department_id' => 'int',
         'service_default_location_id' => 'int',
-        'service_location' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference',
+        'service_location' => '\Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference',
         'service_teams' => 'int[]',
-        'time_approver' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference',
+        'time_approver' => '\Spinen\ConnectWise\Clients\System\Model\MemberReference',
         'time_reminder_email_flag' => 'bool',
         'time_sheet_start_date' => '\DateTime',
-        'time_zone' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TimeZoneReference',
+        'time_zone' => '\Spinen\ConnectWise\Clients\System\Model\TimeZoneReference',
         'title' => 'string',
-        'type' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberTypeReference',
+        'type' => '\Spinen\ConnectWise\Clients\System\Model\MemberTypeReference',
         'vendor_number' => 'string',
-        'warehouse' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseReference',
-        'warehouse_bin' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference',
-        'work_role' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkRoleReference',
-        'work_type' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkTypeReference',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata',
+        'warehouse' => '\Spinen\ConnectWise\Clients\System\Model\WarehouseReference',
+        'warehouse_bin' => '\Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference',
+        'work_role' => '\Spinen\ConnectWise\Clients\System\Model\WorkRoleReference',
+        'work_type' => '\Spinen\ConnectWise\Clients\System\Model\WorkTypeReference',
+        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata',
         'system_flag' => 'bool'
     ];
 
@@ -914,7 +914,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets calendar
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CalendarReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\CalendarReference
      */
     public function getCalendar()
     {
@@ -923,7 +923,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets calendar
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CalendarReference $calendar
+     * @param \Spinen\ConnectWise\Clients\System\Model\CalendarReference $calendar
      * @return $this
      */
     public function setCalendar($calendar)
@@ -956,7 +956,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets country
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CountryReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\CountryReference
      */
     public function getCountry()
     {
@@ -965,7 +965,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets country
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\CountryReference $country
+     * @param \Spinen\ConnectWise\Clients\System\Model\CountryReference $country
      * @return $this
      */
     public function setCountry($country)
@@ -1216,7 +1216,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets expense_approver
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MemberReference
      */
     public function getExpenseApprover()
     {
@@ -1225,7 +1225,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets expense_approver
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference $expense_approver
+     * @param \Spinen\ConnectWise\Clients\System\Model\MemberReference $expense_approver
      * @return $this
      */
     public function setExpenseApprover($expense_approver)
@@ -1835,7 +1835,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets project_default_board
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference
      */
     public function getProjectDefaultBoard()
     {
@@ -1844,7 +1844,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets project_default_board
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference $project_default_board
+     * @param \Spinen\ConnectWise\Clients\System\Model\ProjectBoardReference $project_default_board
      * @return $this
      */
     public function setProjectDefaultBoard($project_default_board)
@@ -1898,7 +1898,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets reports_to
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MemberReference
      */
     public function getReportsTo()
     {
@@ -1907,7 +1907,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets reports_to
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference $reports_to
+     * @param \Spinen\ConnectWise\Clients\System\Model\MemberReference $reports_to
      * @return $this
      */
     public function setReportsTo($reports_to)
@@ -2318,7 +2318,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets security_role
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference
      */
     public function getSecurityRole()
     {
@@ -2327,7 +2327,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets security_role
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference $security_role
+     * @param \Spinen\ConnectWise\Clients\System\Model\SecurityRoleReference $security_role
      * @return $this
      */
     public function setSecurityRole($security_role)
@@ -2339,7 +2339,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets service_default_board
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BoardReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\BoardReference
      */
     public function getServiceDefaultBoard()
     {
@@ -2348,7 +2348,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets service_default_board
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BoardReference $service_default_board
+     * @param \Spinen\ConnectWise\Clients\System\Model\BoardReference $service_default_board
      * @return $this
      */
     public function setServiceDefaultBoard($service_default_board)
@@ -2402,7 +2402,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets service_location
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference
      */
     public function getServiceLocation()
     {
@@ -2411,7 +2411,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets service_location
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference $service_location
+     * @param \Spinen\ConnectWise\Clients\System\Model\ServiceLocationReference $service_location
      * @return $this
      */
     public function setServiceLocation($service_location)
@@ -2444,7 +2444,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets time_approver
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MemberReference
      */
     public function getTimeApprover()
     {
@@ -2453,7 +2453,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets time_approver
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference $time_approver
+     * @param \Spinen\ConnectWise\Clients\System\Model\MemberReference $time_approver
      * @return $this
      */
     public function setTimeApprover($time_approver)
@@ -2507,7 +2507,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets time_zone
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TimeZoneReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\TimeZoneReference
      */
     public function getTimeZone()
     {
@@ -2516,7 +2516,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets time_zone
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\TimeZoneReference $time_zone
+     * @param \Spinen\ConnectWise\Clients\System\Model\TimeZoneReference $time_zone
      * @return $this
      */
     public function setTimeZone($time_zone)
@@ -2553,7 +2553,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets type
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberTypeReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MemberTypeReference
      */
     public function getType()
     {
@@ -2562,7 +2562,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets type
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberTypeReference $type
+     * @param \Spinen\ConnectWise\Clients\System\Model\MemberTypeReference $type
      * @return $this
      */
     public function setType($type)
@@ -2595,7 +2595,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets warehouse
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\WarehouseReference
      */
     public function getWarehouse()
     {
@@ -2604,7 +2604,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets warehouse
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseReference $warehouse
+     * @param \Spinen\ConnectWise\Clients\System\Model\WarehouseReference $warehouse
      * @return $this
      */
     public function setWarehouse($warehouse)
@@ -2616,7 +2616,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets warehouse_bin
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference
      */
     public function getWarehouseBin()
     {
@@ -2625,7 +2625,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets warehouse_bin
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference $warehouse_bin
+     * @param \Spinen\ConnectWise\Clients\System\Model\WarehouseBinReference $warehouse_bin
      * @return $this
      */
     public function setWarehouseBin($warehouse_bin)
@@ -2637,7 +2637,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets work_role
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkRoleReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\WorkRoleReference
      */
     public function getWorkRole()
     {
@@ -2646,7 +2646,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkRoleReference $work_role
+     * @param \Spinen\ConnectWise\Clients\System\Model\WorkRoleReference $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -2658,7 +2658,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets work_type
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkTypeReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\WorkTypeReference
      */
     public function getWorkType()
     {
@@ -2667,7 +2667,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\WorkTypeReference $work_type
+     * @param \Spinen\ConnectWise\Clients\System\Model\WorkTypeReference $work_type
      * @return $this
      */
     public function setWorkType($work_type)
@@ -2679,7 +2679,7 @@ class Member implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -2688,7 +2688,7 @@ class Member implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

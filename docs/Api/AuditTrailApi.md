@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **systemAudittrailCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemAudittrailCountGet($type, $id, $device_identifier)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemAudittrailCountGet($type, $id, $device_identifier)
 
 
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemAudittrailGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\AuditTrailEntry[] systemAudittrailGet($type, $id, $device_identifier, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\AuditTrailEntry[] systemAudittrailGet($type, $id, $device_identifier, $page, $page_size)
 
 
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\AuditTrailEntry[]**](../Model/AuditTrailEntry.md)
+[**\Spinen\ConnectWise\Clients\System\Model\AuditTrailEntry[]**](../Model/AuditTrailEntry.md)
 
 ### Authorization
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **systemBatchPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchResponse systemBatchPost($request)
+> \Spinen\ConnectWise\Clients\System\Model\BatchResponse systemBatchPost($request)
 
 
 
@@ -25,7 +25,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\BatchApi();
-$request = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchRequest(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchRequest | 
+$request = new \Spinen\ConnectWise\Clients\System\Model\BatchRequest(); // \Spinen\ConnectWise\Clients\System\Model\BatchRequest | 
 
 try {
     $result = $api_instance->systemBatchPost($request);
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchRequest**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchRequest.md)|  |
+ **request** | [**\Spinen\ConnectWise\Clients\System\Model\BatchRequest**](../Model/\Spinen\ConnectWise\Clients\System\Model\BatchRequest.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\BatchResponse**](../Model/BatchResponse.md)
+[**\Spinen\ConnectWise\Clients\System\Model\BatchResponse**](../Model/BatchResponse.md)
 
 ### Authorization
 

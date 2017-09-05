@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model;
+namespace Spinen\ConnectWise\Clients\System\Model;
 
 use \ArrayAccess;
 
@@ -56,11 +56,11 @@ class InOutBoard implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'member' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference',
-        'in_out_type' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutTypeReference',
+        'member' => '\Spinen\ConnectWise\Clients\System\Model\MemberReference',
+        'in_out_type' => '\Spinen\ConnectWise\Clients\System\Model\InOutTypeReference',
         'additional_info' => 'string',
         'date_back' => '\DateTime',
-        '_info' => '\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\System\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -219,7 +219,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\MemberReference
      */
     public function getMember()
     {
@@ -228,7 +228,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\MemberReference $member
+     * @param \Spinen\ConnectWise\Clients\System\Model\MemberReference $member
      * @return $this
      */
     public function setMember($member)
@@ -240,7 +240,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Gets in_out_type
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutTypeReference
+     * @return \Spinen\ConnectWise\Clients\System\Model\InOutTypeReference
      */
     public function getInOutType()
     {
@@ -249,7 +249,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Sets in_out_type
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\InOutTypeReference $in_out_type
+     * @param \Spinen\ConnectWise\Clients\System\Model\InOutTypeReference $in_out_type
      * @return $this
      */
     public function setInOutType($in_out_type)
@@ -307,7 +307,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\System\Model\Metadata
      */
     public function getInfo()
     {
@@ -316,7 +316,7 @@ class InOutBoard implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\System\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

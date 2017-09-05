@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **systemUserDefinedFieldsCountGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count systemUserDefinedFieldsCountGet($conditions)
+> \Spinen\ConnectWise\Clients\System\Model\Count systemUserDefinedFieldsCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\System\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemUserDefinedFieldsGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField[] systemUserDefinedFieldsGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\System\Model\UserDefinedField[] systemUserDefinedFieldsGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField[]**](../Model/UserDefinedField.md)
+[**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField[]**](../Model/UserDefinedField.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemUserDefinedFieldsIdGet**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdGet($id)
+> \Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
+[**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemUserDefinedFieldsIdPatch**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\UserDefinedFieldsApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\System\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->systemUserDefinedFieldsIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\System\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
+[**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemUserDefinedFieldsIdPut**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdPut($id, $user_defined_field)
+> \Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsIdPut($id, $user_defined_field)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setP
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\UserDefinedFieldsApi();
 $id = 56; // int | 
-$user_defined_field = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField | 
+$user_defined_field = new \Spinen\ConnectWise\Clients\System\Model\UserDefinedField(); // \Spinen\ConnectWise\Clients\System\Model\UserDefinedField | 
 
 try {
     $result = $api_instance->systemUserDefinedFieldsIdPut($id, $user_defined_field);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **user_defined_field** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField.md)|  |
+ **user_defined_field** | [**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/\Spinen\ConnectWise\Clients\System\Model\UserDefinedField.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
+[**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **systemUserDefinedFieldsPost**
-> \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsPost($user_defined_field)
+> \Spinen\ConnectWise\Clients\System\Model\UserDefinedField systemUserDefinedFieldsPost($user_defined_field)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setU
 Spinen\ConnectWise\Clients\System\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\System\Api\UserDefinedFieldsApi();
-$user_defined_field = new \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField(); // \Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField | 
+$user_defined_field = new \Spinen\ConnectWise\Clients\System\Model\UserDefinedField(); // \Spinen\ConnectWise\Clients\System\Model\UserDefinedField | 
 
 try {
     $result = $api_instance->systemUserDefinedFieldsPost($user_defined_field);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_defined_field** | [**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField.md)|  |
+ **user_defined_field** | [**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/\Spinen\ConnectWise\Clients\System\Model\UserDefinedField.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\System\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
+[**\Spinen\ConnectWise\Clients\System\Model\UserDefinedField**](../Model/UserDefinedField.md)
 
 ### Authorization
 
